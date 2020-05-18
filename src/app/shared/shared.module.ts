@@ -12,6 +12,7 @@ import { MaterialInfoSectionComponent } from './material-info-section/material-i
 import { FormsModule } from '@angular/forms';
 import { AgeChartMobileSectionComponent } from './age-chart-mobile-section/age-chart-mobile-section.component';
 import { Ng5SliderModule } from 'ng5-slider';
+import { AuscultationMobileSectionComponent } from './auscultation-mobile-section/auscultation-mobile-section.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { Ng5SliderModule } from 'ng5-slider';
     HeartVideoSectionComponent,
     MaterialInfoSectionComponent,
     AgeChartMobileSectionComponent,
+    AuscultationMobileSectionComponent,
   ],
   imports: [
     CommonModule,
@@ -39,7 +41,8 @@ import { Ng5SliderModule } from 'ng5-slider';
     AgeChartSectionComponent,
     HeartVideoSectionComponent,
     MaterialInfoSectionComponent,
-    AgeChartMobileSectionComponent
+    AgeChartMobileSectionComponent,
+    AuscultationMobileSectionComponent
   ]
 })
 export class SharedModule { }

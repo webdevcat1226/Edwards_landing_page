@@ -1,6 +1,9 @@
 app-age-chart-mobile-section {
   display: none;
 }
+app-auscultation-mobile-section {
+  display: none;
+}
 
 @media (max-width: 768px) {
   app-age-chart-section {
@@ -12,6 +15,18 @@ app-age-chart-mobile-section {
   }
 
   app-age-chart-mobile-section {
+    display: block !important;
+  }
+
+  app-doctor-as-section {
+    display: none;
+  }
+
+  app-pay-method-section {
+    display: none;
+  }
+
+  app-auscultation-mobile-section {
     display: block;
   }
 }
