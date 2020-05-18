@@ -10,6 +10,8 @@ import { AgeChartSectionComponent } from './age-chart-section/age-chart-section.
 import { HeartVideoSectionComponent } from './heart-video-section/heart-video-section.component';
 import { MaterialInfoSectionComponent } from './material-info-section/material-info-section.component';
 import { FormsModule } from '@angular/forms';
+import { AgeChartMobileSectionComponent } from './age-chart-mobile-section/age-chart-mobile-section.component';
+import { Ng5SliderModule } from 'ng5-slider';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,12 @@ import { FormsModule } from '@angular/forms';
     AgeChartSectionComponent,
     HeartVideoSectionComponent,
     MaterialInfoSectionComponent,
+    AgeChartMobileSectionComponent,
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    Ng5SliderModule
   ],
   exports: [
     FooterComponent,
@@ -34,7 +38,8 @@ import { FormsModule } from '@angular/forms';
     PatientSectionComponent,
     AgeChartSectionComponent,
     HeartVideoSectionComponent,
-    MaterialInfoSectionComponent
+    MaterialInfoSectionComponent,
+    AgeChartMobileSectionComponent
   ]
 })
 export class SharedModule { }

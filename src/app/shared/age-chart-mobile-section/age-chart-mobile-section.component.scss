@@ -1,0 +1,64 @@
+section {
+  background: #EDEEEE;
+
+  .age-select-slider {
+    img {
+      width: 98%;
+      margin-bottom: -36px;
+    }
+  }
+
+  // We need to use ::ng-deep to overcome view encapsulation of ng5-slider
+  ::ng-deep {
+    .age-select-slider .ng5-slider .ng5-slider-bar {
+      background: #CCCCCC;
+      height: 28.22px;
+      border-radius: 17.5px;
+      box-shadow: inset 0px 1px 3px 1px rgba(0,0,0,0.6);
+    }
+
+    .age-select-slider .ng5-slider .ng5-slider-selection {
+      background: orange;
+    }
+
+    .age-select-slider .ng5-slider .ng5-slider-pointer {
+      background-image: url("/assets/images/age-slider-pointer.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 50px;
+      width: 25px;
+      border-radius: 0 !important;
+      top: -12px;
+    }
+
+    .age-select-slider .ng5-slider .ng5-slider-pointer:after {
+      display: none;
+    }
+
+    .age-select-slider .ng5-slider .ng5-slider-floor {
+      display: none;
+    }
+
+    .age-select-slider .ng5-slider .ng5-slider-ceil {
+      display: none;
+    }
+
+    .age-select-slider .ng5-slider .ng5-slider-model-value {
+      background-image: url("/assets/images/age-slider-model-bg.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 62px;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 28px;
+      font-weight: bolder;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
