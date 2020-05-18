@@ -1,0 +1,42 @@
+section {
+  .auscultation-data-window-wrapper {
+    background: #999999;
+
+    div:first-child {
+      span {
+        width: 30px;
+        height: 1px;
+        background: white;
+      }
+
+      h1 {
+        font-weight: lighter;
+      }
+    }
+
+    div.sound-graph-wrapper {
+      div.sound-graph-box {
+        background: #ffffff70;
+        border-radius: 100px;
+        border: 2px dashed white;
+
+        p {
+          width: 70px;
+        }
+
+        & > img {
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  div.sound-graph-box {
+
+    & > img {
+      width: 200px !important;
+    }
+  }
+}
