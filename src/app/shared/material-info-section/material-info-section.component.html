@@ -1,0 +1,192 @@
+<form class="px-20">
+  <section class="p-30 mx-auto my-30 d-flex flex-column align-items-center">
+    <div class="disease-type-wrapper form-unit row">
+      <div class="mb-30 col-sm-12 col-md-6 col-lg-3">
+        <div class="p-10 d-flex flex-column align-items-center">
+          <h1 class="pb-0 font-16 text-dark text-center"><span>①</span>患者向けパンフレット</h1>
+          <div class="book-image-wrapper d-flex justify-content-center align-items-center">
+            <img src="assets/images/disease1.png" alt="Patient patient frets">
+          </div>
+        </div>
+      </div>
+      <div class="mb-30 col-sm-12 col-md-6 col-lg-3">
+        <div class="p-10 d-flex flex-column align-items-center">
+          <h1 class="pb-0 font-16 text-dark text-center"><span>②</span>大動脈弁狭窄症の
+            診断と治療</h1>
+          <div class="book-image-wrapper d-flex justify-content-center align-items-center">
+            <img src="assets/images/disease2.png" alt="Aortic stenosis">
+          </div>
+        </div>
+      </div>
+      <div class="mb-30 col-sm-12 col-md-6 col-lg-3">
+        <div class="p-10 d-flex flex-column align-items-center">
+          <h1 class="pb-0 font-16 text-dark text-center"><span>③</span>大動脈弁
+            スタンド</h1>
+          <div class="book-image-wrapper d-flex justify-content-center align-items-center">
+            <img src="assets/images/disease3.png" alt="Aortic valve">
+          </div>
+        </div>
+      </div>
+      <div class="mb-30 col-sm-12 col-md-6 col-lg-3">
+        <div class="p-10 d-flex flex-column align-items-center">
+          <h1 class="pb-0 font-16 text-dark text-center"><span>④</span>TAVI実施医療機関</h1>
+          <div class="book-image-wrapper d-flex justify-content-center align-items-center">
+            <img src="assets/images/disease4.png" alt="TAVI implementation">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="material-select-wrapper d-flex flex-column align-items-start w-100">
+      <h1 class="mt-10 pb-0 font-22 text-left text-primary">希望資料選択</h1>
+      <div class="radio-option-container mt-5 form-unit d-flex align-items-center">
+        <div class="form-group">
+          <input type="radio" id="initial_doc_set" name="desired_material" [(ngModel)]="selected_material" value="initial doc" checked>
+          <label class="mb-0 pl-10 mr-25 font-18 text-dark" for="initial_doc_set">初回資料セット</label>
+        </div>
+        <div class="form-group">
+          <input type="radio" id="individual_material" name="desired_material" [(ngModel)]="selected_material" value="individual info">
+          <label class="mb-0 pl-10 font-18 text-dark" for="individual_material">個別資料</label>
+        </div>
+      </div>
+      <div class="form-unit individual-info-select-table ml-170 p-30" *ngIf="selected_material === 'individual info'">
+        <div class="form-group my-0 d-flex align-items-center row p-10">
+          <label class="col-12 col-md-4 pl-0" for="patient_friendly_pallets">患者さん向けパンフレット</label>
+          <select class="col-12 col-md-8" id="patient_friendly_pallets">
+            <option value="" disabled selected>選択してください</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <div class="form-group my-0 d-flex align-items-center row p-10">
+          <label class="col-12 col-md-4 pl-0" for="aortic_stenosis">大動脈弁狭窄症の診断と治療</label>
+          <select class="col-12 col-md-8" id="aortic_stenosis">
+            <option value="" disabled selected>選択してください</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <div class="form-group my-0 d-flex align-items-center row p-10">
+          <label class="col-12 col-md-4 pl-0" for="aortic_valve ">大動脈弁スタンド</label>
+          <select class="col-12 col-md-8" id="aortic_valve ">
+            <option value="" disabled selected>選択してください</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <div class="form-group my-0 d-flex align-items-center row p-10">
+          <label class="col-12 col-md-4 pl-0" for="taxi_implementation">TAVI実施医療機関</label>
+          <select class="col-12 col-md-8" id="taxi_implementation">
+            <option value="" disabled selected>選択してください</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="personal-info-wrapper d-flex flex-column align-items-start w-100 mt-25">
+      <h1 class="mt-10 pb-0 font-22 text-left text-primary">個人情報入力</h1>
+      <div class="form-unit personal-info-input-section w-100">
+        <div class="form-group affiliation mx-0 d-flex row font-18">
+          <label class="d-flex align-items-center justify-content-end my-auto col-md-4 col-12" for="affiliation">ご所属
+            <a class="link-button ml-15 px-5 font-12" href="javascript:;">必須</a>
+          </label>
+          <input type="text" class="form-control col-md-8 col-12" id="affiliation" placeholder="事業所名をご入力ください" required>
+        </div>
+        <div class="form-group last-name mx-0 d-flex row font-18">
+          <label class="d-flex align-items-center justify-content-end my-auto col-md-4 col-12" for="lastName">お名前（姓）
+            <a class="link-button ml-15 px-5 font-12" href="javascript:;">必須</a>
+          </label>
+          <input type="text" class="form-control col-md-8 col-12" id="lastName" placeholder="姓をご入力ください" required>
+        </div>
+        <div class="form-group first-name mx-0  d-flex row  font-18">
+          <label class="d-flex align-items-center justify-content-end my-auto col-md-4 col-12" for="firstName">お名前（名）
+            <a class="link-button ml-15 px-5" href="javascript:;">必須</a>
+          </label>
+          <input type="text" class="form-control col-md-8 col-12" id="firstName" placeholder="名をご入力ください" required>
+        </div>
+        <div class="form-group mail-address mx-0 d-flex row font-18">
+          <label class="d-flex align-items-center justify-content-end my-auto col-md-4 col-12" for="mail_address">メールアドレス
+            <a class="link-button ml-15 px-5" href="javascript:;">必須</a>
+          </label>
+          <input type="text" class="form-control col-md-8 col-12" id="mail_address" placeholder="メールアドレスをご入力ください"
+                 required>
+        </div>
+        <div class="form-group phone-number mx-0 font-18 d-flex row">
+          <label class="d-flex align-items-center justify-content-end my-auto col-md-4 col-12" for="phone_number">連絡先（電話番号）
+            <a class="link-button ml-15 px-5" href="javascript:;">必須</a>
+          </label>
+          <input type="text" class="form-control col-md-8 col-12" id="phone_number" placeholder="電話番号をご入力ください" required>
+        </div>
+        <div class="form-group delivery-address mx-0 d-flex row font-18">
+          <label class="d-flex align-items-center justify-content-end mb-auto col-md-4 col-12"
+                 style="margin-top: 7px !important;">送付先住所
+            <a class="link-button ml-15 px-5" href="javascript:;">必須</a>
+          </label>
+          <div class="col-md-8 col-12 d-flex flex-column justify-content-start w-100">
+            <div class="d-flex align-items-center justify-content-start w-100">
+              <input type="radio" class="form-control" id="info_destination" name="delivery_address" value="male">
+              <label class="mb-0 pl-10 mr-25 font-18 text-dark" for="info_destination">ご案内状送付先</label>
+            </div>
+            <div class="d-flex align-items-center justify-content-start w-100">
+              <input type="radio" class="form-control" id="send_unknown_user" name="delivery_address" value="male"
+                     checked>
+              <label class="mb-0 pl-10 mr-25 font-18 text-dark" for="send_unknown_user">ご案内状送付先と異なる住所へ送付を希望</label>
+            </div>
+            <div class="d-flex postal-code align-items-center justify-content-start w-100">
+              <label>〒</label>
+              <div class="row d-flex align-items-center w-100">
+                <div class="col-3">
+                  <input type="text" class="form-control mx-5 w-100" id="first_postal_code" placeholder="" required>
+                </div>
+                <input type="text" class="form-control col-9" id="second_postal_code" placeholder="" required>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="send-info-wrapper d-flex flex-column align-items-center justify-content-center my-20 w-100">
+      <div class="button-wrapper mb-30">
+        <button type="submit" class="font-20 text-white" (click)="sendForm()">送信する</button>
+      </div>
+      <div class="text-center" *ngIf="getIsSubmitted()">
+        <h1 class="font-22 text-primary my-10">資料をご請求いただき、誠にありがとうございました。</h1>
+        <div class="font-18 mt-10">資料到着後、約1か月後にアンケートの電話をかけさせていただきます。<br>
+          ご回答いただきましたら、Amazonギフト券を送付いたします。<br>
+          ご協力の程、何卒よろしくお願いいたします。</div>
+      </div>
+    </div>
+  </section>
+</form>

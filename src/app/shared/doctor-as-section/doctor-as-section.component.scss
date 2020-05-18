@@ -1,0 +1,34 @@
+section {
+  background-image: url("/assets/images/doctor-as-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  h1 {
+    line-height: 53px;
+    letter-spacing: 0.665px;
+  }
+
+  .graph-wrapper {
+    //min-width: 98vw !important;
+
+    .sound-graph-box {
+      background: #ffffff70;
+      border-radius: 100px;
+      border: 2px dashed white;
+      width: fit-content;
+
+      p {
+        min-width: 65px !important;
+      }
+
+      & > img {
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+}

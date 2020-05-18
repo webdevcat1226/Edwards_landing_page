@@ -1,0 +1,172 @@
+
+section {
+  box-shadow: 0 0 3px 0 darkgrey;
+  width: fit-content;
+
+  .disease-type-wrapper {
+    .col-sm-12 {
+      div.p-10 {
+        min-width: 200px;
+
+        border: 1px solid lightgray;
+
+        h1 {
+          width: 115px;
+
+          span {
+            display: none;
+          }
+        }
+
+        .book-image-wrapper {
+          height: 200px;
+
+          img {
+            box-shadow: 0 0 3px 1px darkgrey;
+          }
+        }
+      }
+    }
+  }
+
+  .material-select-wrapper {
+    .radio-option-container {
+      input {
+        //background-color: #c8102e;
+      }
+    }
+
+    .individual-info-select-table {
+      background: #EEEEEE;
+      width: 81%;
+
+      select {
+        option {
+          font-size: 16px;
+          color: #333333;
+        }
+
+        &:active {
+          box-shadow: none;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .personal-info-wrapper {
+    .personal-info-input-section {
+      a.link-button {
+        height: fit-content;
+        font-size: 12px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      input {
+        &:focus {
+          box-shadow: 0 0 3px 0 #c8102e;
+          border: none;
+          outline: 0 none;
+        }
+      }
+
+      .delivery-address {
+        .col-md-8 {
+          padding-right: 3px !important;
+
+          input {
+            width: 20px;
+
+            &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+
+        .postal-code {
+          input {
+            &:focus {
+              box-shadow: 0 0 3px 0 #c8102e;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .send-info-wrapper {
+    button {
+      width: 250px;
+      height: 60px;
+      background: #c8102e;
+      border: none;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .disease-type-wrapper {
+    div.col-sm-12 > div.p-10 {
+      flex-direction: row !important;
+      padding-left: 20px !important;
+
+      h1 {
+        order: 2;
+        flex: 2 !important;
+        text-align: left !important;
+        padding-left: 20px !important;
+      }
+
+      div {
+        flex: 1 !important;
+        justify-content: flex-start !important;
+      }
+    }
+  }
+
+  .material-select-wrapper {
+    .individual-info-select-table {
+      margin-left: 0 !important;
+      width: 100% !important;
+
+      select:focus {
+        border: none;
+        box-shadow: 0 0 2px 0 gray;
+      }
+    }
+  }
+
+  .personal-info-wrapper {
+    .personal-info-input-section {
+      div.form-group.my-15 {
+        label:first-child {
+          justify-content: flex-start !important;
+          margin: 10px 0 !important;
+          padding-left: 0 !important;
+        }
+      }
+
+      .delivery-address {
+        .col-md-8 {
+          padding-left: 3px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 928px) {
+  .individual-info-select-table {
+    width: 69vw !important;
+  }
+}
+
+@media (min-width: 928px) and (max-width: 1000px) {
+  .individual-info-select-table {
+    width: 71vw !important;
+  }
+}

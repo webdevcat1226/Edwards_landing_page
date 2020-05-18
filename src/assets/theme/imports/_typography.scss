@@ -1,0 +1,20 @@
+@for $i from 5 through 50 {
+  .font-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+@for $i from 5 through 50 {
+  .line-height-#{$i} {
+    line-height: #{$i}px;
+  }
+}
+
+.font-weight-medium {
+  font-weight: 500;
+}
+
+
+.font-merriweather {
+  font-family: 'Merriweather Sans', sans-serif;
+}

@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+// Customize bootstrap theme variables
+@import "assets/theme";
+@import "assets/theme/imports";
+@import "~bootstrap";
+
+//@import "~@ng-select/ng-select/themes/material.theme.css";
+
+* {
+  font-family: 'Noto Sans JP', sans-serif;
+}

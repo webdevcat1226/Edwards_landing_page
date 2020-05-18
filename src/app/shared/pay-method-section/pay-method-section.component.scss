@@ -1,0 +1,34 @@
+section {
+  background-image: url("/assets/images/pay-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: decimal;
+  li {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.card-image-wrapper {
+  img {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 7px rgba(0,0,0,0.5);
+  }
+}
+
+.card-badge {
+  width: 200px;
+  height: 38px;
+  &.bottom {
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

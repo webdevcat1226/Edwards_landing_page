@@ -1,0 +1,55 @@
+section {
+  background-image: url("/assets/images/patient-background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: fit-content;
+
+  .text-wrapper {
+    width: fit-content;
+
+    div {
+      margin: 10px auto;
+      padding: 5px 10px;
+      border-bottom: 3px solid red;
+      width: fit-content;
+    }
+  }
+
+  .patient-logo-wrapper {
+    img {
+      &:first-child {
+        transform: translate(-315%, -100%);
+      }
+
+      &:last-child {
+        transform: translate(247%, -100%);
+      }
+    }
+  }
+}
+
+
+@media (max-width: 950px) {
+  .text-wrapper {
+    padding: 30px 20px !important;
+  }
+
+  .patient-logo-wrapper {
+    img {
+      &:first-child {
+        transform: translate(-230%, -100%) !important;
+      }
+
+      &:last-child {
+        transform: translate(150%, -100%) !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .patient-logo-wrapper {
+    display: none;
+  }
+}

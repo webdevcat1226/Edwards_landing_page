@@ -1,0 +1,28 @@
+// Colors
+$crimson: #C8102E;
+$mine-shaft: #333333;
+$gallery: #EEEEEE;
+$black-haze: #EDEEEE;
+$black: #000000;
+
+// Theme colors
+$theme-colors: (
+  primary: $crimson,
+  light: $black-haze,
+  dark: $mine-shaft,
+);
+
+
+// Spacing
+$pixel-spacer: 5px !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+@for $i from 1 through 50 {
+  $spacers: map-merge($spacers, (
+    $i * 5: ($i * $pixel-spacer)
+  ));
+}
+
+// Font size
+$h3-font-size: 2rem;
+$h5-font-size: 1.25rem;
+$h6-font-size:  1.125rem;

@@ -1,0 +1,37 @@
+section {
+  background: #EDEEEE;
+  img {
+    width: 100%;
+  }
+
+  .doctor-image-wrapper {
+    height: fit-content;
+
+    img {
+
+    }
+  }
+
+  .age-chart-wrapper {
+    .text-wrapper {
+      width: fit-content;
+    }
+
+    .chart-wrapper {
+      width: fit-content;
+
+      div {
+        bottom: 50px;
+        left: 85px;
+      }
+    }
+  }
+}
+
+@media (max-width: 565px) {
+  .chart-wrapper {
+    div {
+      bottom: 10px !important;
+    }
+  }
+}
