@@ -9,8 +9,29 @@
     <p class="text-left font-18 line-height-20 font-weight-light mt-20">1週間の内に見ている75歳以上の患者数を入れてみてください</p>
   </div>
   <div class="age-select-slider mt-0 mb-30 px-10 d-flex flex-column align-items-center">
-    <img class="mt-120" src="assets/images/age-slider-ruler.png" alt="Slider ruler">
+    <img class="mt-100" src="assets/images/age-slider-ruler.png" alt="Slider ruler">
     <ng5-slider [(value)]="value" [options]="options"></ng5-slider>
   </div>
+  <div class="patient-number-viewer">
+    <div class="patient-number row">
+      <div class="year-patient-number col-6 d-flex flex-column align-items-center p-30">
+        <a class="text-primary">259</a>
+        <a class="font-22 text-center">1年間に診察する高齢の大動脈弁狭窄症患者数</a>
+      </div>
+      <div class="diagnosed-number col-6 d-flex flex-column align-items-center p-30">
+        <a class="text-primary">69</a>
+        <a class="font-22 text-center">大動脈弁狭窄症患者数</a>
+      </div>
+    </div>
+  </div>
+  <div class="death-number-viewer d-flex flex-column align-items-center justify-content-center w-100">
+    <h1 class="text-white">34</h1>
+    <p class="font-22 text-white text-center">治療せずに放置すると2年以内に亡くなる患者数</p>
+  </div>
+  <footer class="mt-30 font-18">
+    * Based on a 48-week working year. Number calculated from
+    pooled prevalence of all severe aortic stenosis in the elderly
+    (12.4%).13
+  </footer>
 </section>
 
