@@ -3,15 +3,31 @@ section {
     img {
       height: 30px;
     }
+
     border: 1px solid lightgray;
   }
 
   .institution-container {
     border: 1px solid lightgray;
 
+    h1 {
+      line-height: 30px;
+    }
+
     .phone-number {
       img {
         height: 20px;
+      }
+    }
+
+    .inquire-by-email {
+      border: 1px solid #c8102e;
+      width: fit-content;
+    }
+
+    .handled-institution {
+      &:nth-child(4), &:nth-child(2) {
+        background: #EEEEEE !important;
       }
     }
   }
