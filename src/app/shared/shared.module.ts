@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Ng5SliderModule } from 'ng5-slider';
-import { GoogleMapsModule } from '@angular/google-maps';
-// import { GoogleMapDemo } from './nearby-hospital-section';
 
 import { FooterComponent } from './footer/footer.component';
 import { FindHospitalSectionComponent } from './find-hospital-section/find-hospital-section.component';
@@ -34,8 +32,7 @@ import { NearbyHospitalSectionComponent } from './nearby-hospital-section/nearby
   imports: [
     CommonModule,
     FormsModule,
-    Ng5SliderModule,
-    GoogleMapsModule
+    Ng5SliderModule
   ],
   exports: [
     FooterComponent,

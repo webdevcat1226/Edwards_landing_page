@@ -2,3 +2,15 @@ div.w-100 {
   background: #EEEEEE;
   height: 30px;
 }
+
+.map {
+  max-width: calc(100% - 30px);
+  min-height: 180px;
+  max-height: 180px;
+}
+
+::ng-deep {
+  .mapboxgl-control-container {
+    display: none;
+  }
+}

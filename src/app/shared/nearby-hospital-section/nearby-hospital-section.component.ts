@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MapInfoWindow, MapMarker } from '@angular/google-maps';
+import { Component, OnInit } from '@angular/core';
+import * as mapboxgl from 'mapbox-gl';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-nearby-hospital-section',
@@ -8,32 +9,25 @@ import { MapInfoWindow, MapMarker } from '@angular/google-maps';
 })
 export class NearbyHospitalSectionComponent implements OnInit {
 
-  constructor() { }
-  @ViewChild(MapInfoWindow, {static: false}) infoWindow: MapInfoWindow;
-
-  center = {lat: 24, lng: 12};
-  markerOptions = {draggable: false};
-  markerPositions: google.maps.LatLngLiteral[] = [];
-  zoom = 4;
-  display?: google.maps.LatLngLiteral;
-
-  addMarker(event: google.maps.MouseEvent) {
-    this.markerPositions.push(event.latLng.toJSON());
+  constructor() {
   }
 
-  move(event: google.maps.MouseEvent) {
-    this.display = event.latLng.toJSON();
-  }
-
-  openInfoWindow(marker: MapMarker) {
-    this.infoWindow.open(marker);
-  }
-
-  removeLastMarker() {
-    this.markerPositions.pop();
-  }
+  map: mapboxgl.Map;
+  style = 'mapbox://styles/iwanovich1234/ckadl3rts0k7b1iluu07re4l7';
+  lat = 35.652832;
+  lng = 139.769478;
 
   ngOnInit(): void {
+    // @ts-ignore
+    mapboxgl.accessToken = environment.mapbox.accessToken;
+    this.map = new mapboxgl.Map({
+      container: 'map',
+      style: this.style,
+      zoom: 8,
+      center: [this.lng, this.lat]
+    });
+    // Add map controls
+    this.map.addControl(new mapboxgl.NavigationControl());
   }
 
 }
