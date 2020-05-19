@@ -14,6 +14,7 @@ import { MaterialInfoSectionComponent } from './material-info-section/material-i
 import { AgeChartMobileSectionComponent } from './age-chart-mobile-section/age-chart-mobile-section.component';
 import { AuscultationMobileSectionComponent } from './auscultation-mobile-section/auscultation-mobile-section.component';
 import { NearbyHospitalSectionComponent } from './nearby-hospital-section/nearby-hospital-section.component';
+import { MedicalInstitutionListSectionComponent } from './medical-institution-list-section/medical-institution-list-section.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { NearbyHospitalSectionComponent } from './nearby-hospital-section/nearby
     AgeChartMobileSectionComponent,
     AuscultationMobileSectionComponent,
     NearbyHospitalSectionComponent,
+    MedicalInstitutionListSectionComponent,
   ],
   imports: [
     CommonModule,
