@@ -4,9 +4,9 @@ div.w-100 {
 }
 
 .map {
-  max-width: calc(100% - 30px);
-  min-height: 180px;
-  max-height: 180px;
+  max-width: 100%;
+  min-height: 200px;
+  max-height: 200px;
 }
 
 ::ng-deep {

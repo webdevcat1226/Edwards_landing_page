@@ -10,6 +10,10 @@ app-nearby-hospital-section {
   display: none;
 }
 
+app-medical-institution-list-section {
+  display: none;
+}
+
 @media (max-width: 768px) {
   app-age-chart-section {
     display: none;
@@ -27,6 +31,10 @@ app-nearby-hospital-section {
     display: none;
   }
 
+  app-find-hospital-section {
+    display: none;
+  }
+
   app-age-chart-mobile-section {
     display: block !important;
   }
@@ -36,6 +44,10 @@ app-nearby-hospital-section {
   }
 
   app-nearby-hospital-section {
+    display: block;
+  }
+
+  app-medical-institution-list-section {
     display: block;
   }
 }

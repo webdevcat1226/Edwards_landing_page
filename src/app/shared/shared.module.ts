@@ -47,7 +47,8 @@ import { MedicalInstitutionListSectionComponent } from './medical-institution-li
     MaterialInfoSectionComponent,
     AgeChartMobileSectionComponent,
     AuscultationMobileSectionComponent,
-    NearbyHospitalSectionComponent
+    NearbyHospitalSectionComponent,
+    MedicalInstitutionListSectionComponent
   ]
 })
 export class SharedModule { }
