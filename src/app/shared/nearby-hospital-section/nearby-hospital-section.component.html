@@ -1,0 +1,20 @@
+<div class="w-100"></div>
+<section class="p-15">
+  <h1 class="map-part-title font-26 text-primary text-center my-20">近隣の医療機関</h1>
+  <div class="overflow-hidden">
+    <google-map height="200px"
+                width="100%"
+                [center]="center"
+                [zoom]="zoom"
+                (mapClick)="addMarker($event)"
+                (mapMousemove)="move($event)"
+                (mapRightclick)="removeLastMarker()">
+      <map-marker #marker
+                  *ngFor="let markerPosition of markerPositions"
+                  [position]="markerPosition"
+                  [options]="markerOptions"
+                  (mapClick)="openInfoWindow(marker)"></map-marker>
+      <map-info-window>Info Window content</map-info-window>
+    </google-map>
+  </div>
+</section>

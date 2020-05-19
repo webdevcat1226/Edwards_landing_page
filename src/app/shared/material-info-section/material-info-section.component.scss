@@ -1,4 +1,3 @@
-
 section {
   box-shadow: 0 0 3px 0 darkgrey;
   width: fit-content;
@@ -159,14 +158,18 @@ section {
   }
 }
 
-@media (min-width: 768px) and (max-width: 928px) {
-  .individual-info-select-table {
-    width: 69vw !important;
-  }
-}
 
 @media (min-width: 928px) and (max-width: 1000px) {
   .individual-info-select-table {
     width: 71vw !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 928px) {
+  section {
+    box-shadow: 0 0 1px 0 darkgray;
+  }
+  .individual-info-select-table {
+    width: 69vw !important;
   }
 }

@@ -1,7 +1,12 @@
 app-age-chart-mobile-section {
   display: none;
 }
+
 app-auscultation-mobile-section {
+  display: none;
+}
+
+app-nearby-hospital-section {
   display: none;
 }
 
@@ -14,10 +19,6 @@ app-auscultation-mobile-section {
     display: none;
   }
 
-  app-age-chart-mobile-section {
-    display: block !important;
-  }
-
   app-doctor-as-section {
     display: none;
   }
@@ -26,7 +27,15 @@ app-auscultation-mobile-section {
     display: none;
   }
 
+  app-age-chart-mobile-section {
+    display: block !important;
+  }
+
   app-auscultation-mobile-section {
+    display: block;
+  }
+
+  app-nearby-hospital-section {
     display: block;
   }
 }

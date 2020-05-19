@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { Ng5SliderModule } from 'ng5-slider';
+import { GoogleMapsModule } from '@angular/google-maps';
+// import { GoogleMapDemo } from './nearby-hospital-section';
 
 import { FooterComponent } from './footer/footer.component';
 import { FindHospitalSectionComponent } from './find-hospital-section/find-hospital-section.component';
@@ -9,10 +13,9 @@ import { PatientSectionComponent } from './patient-section/patient-section.compo
 import { AgeChartSectionComponent } from './age-chart-section/age-chart-section.component';
 import { HeartVideoSectionComponent } from './heart-video-section/heart-video-section.component';
 import { MaterialInfoSectionComponent } from './material-info-section/material-info-section.component';
-import { FormsModule } from '@angular/forms';
 import { AgeChartMobileSectionComponent } from './age-chart-mobile-section/age-chart-mobile-section.component';
-import { Ng5SliderModule } from 'ng5-slider';
 import { AuscultationMobileSectionComponent } from './auscultation-mobile-section/auscultation-mobile-section.component';
+import { NearbyHospitalSectionComponent } from './nearby-hospital-section/nearby-hospital-section.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +29,13 @@ import { AuscultationMobileSectionComponent } from './auscultation-mobile-sectio
     MaterialInfoSectionComponent,
     AgeChartMobileSectionComponent,
     AuscultationMobileSectionComponent,
+    NearbyHospitalSectionComponent,
   ],
   imports: [
     CommonModule,
     FormsModule,
-    Ng5SliderModule
+    Ng5SliderModule,
+    GoogleMapsModule
   ],
   exports: [
     FooterComponent,
@@ -42,7 +47,8 @@ import { AuscultationMobileSectionComponent } from './auscultation-mobile-sectio
     HeartVideoSectionComponent,
     MaterialInfoSectionComponent,
     AgeChartMobileSectionComponent,
-    AuscultationMobileSectionComponent
+    AuscultationMobileSectionComponent,
+    NearbyHospitalSectionComponent
   ]
 })
 export class SharedModule { }

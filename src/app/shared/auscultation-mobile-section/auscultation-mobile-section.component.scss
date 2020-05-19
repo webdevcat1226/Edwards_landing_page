@@ -30,6 +30,9 @@ section {
       }
     }
   }
+  &>h1 {
+    background: #EEEEEE;
+  }
 }
 
 @media (max-width: 420px) {
