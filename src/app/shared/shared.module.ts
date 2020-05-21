@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Ng5SliderModule } from 'ng5-slider';
+import { ChartsModule } from 'ng2-charts';
 
 import { FooterComponent } from './footer/footer.component';
 import { FindHospitalSectionComponent } from './find-hospital-section/find-hospital-section.component';
@@ -34,7 +35,8 @@ import { MedicalInstitutionListSectionComponent } from './medical-institution-li
   imports: [
     CommonModule,
     FormsModule,
-    Ng5SliderModule
+    Ng5SliderModule,
+    ChartsModule
   ],
   exports: [
     FooterComponent,
