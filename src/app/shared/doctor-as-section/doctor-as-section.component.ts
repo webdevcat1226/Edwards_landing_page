@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Howl, Howler} from 'howler';
+import { Howl, Howler } from 'howler';
 
 @Component({
   selector: 'app-doctor-as-section',
@@ -8,7 +8,8 @@ import {Howl, Howler} from 'howler';
 })
 export class DoctorAsSectionComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   normalSound = new Howl({
     src: ['assets/sounds/normal.mp3']
@@ -18,24 +19,40 @@ export class DoctorAsSectionComponent implements OnInit {
     src: ['assets/sounds/aspatient.mp3']
   });
 
-  normalSoundButtonClickCount: boolean;
-  aspatientSoundButtonClickCount: boolean;
+  normalSoundButtonClicked: boolean;
+  aspatientSoundButtonClicked: boolean;
 
   // play normal sound
   normalSoundPlay() {
-    this.aspatientSound.currentTime = 0;
+    this.aspatientSoundButtonClicked = false;
     this.aspatientSound.pause();
-    this.normalSound.play();
+
+    this.normalSoundButtonClicked = this.normalSoundButtonClicked === false;
+    if (this.normalSoundButtonClicked) {
+      this.normalSound.currentTime = 0;
+      this.normalSound.play();
+    } else {
+      this.normalSound.pause();
+    }
   }
 
   aspatientSoundPlay() {
-    this.normalSound.currentTime = 0;
+    this.normalSoundButtonClicked = false;
     this.normalSound.pause();
-    this.aspatientSound.play();
+
+    this.aspatientSoundButtonClicked = this.aspatientSoundButtonClicked === false;
+    if (this.aspatientSoundButtonClicked) {
+      this.aspatientSound.currentTime = 0;
+      this.aspatientSound.play();
+    } else  {
+      this.aspatientSound.pause();
+    }
   }
 
   ngOnInit(): void {
     Howler.volume(1);
+    this.normalSoundButtonClicked = false;
+    this.aspatientSoundButtonClicked = true;
   }
 
 }
