@@ -25,6 +25,17 @@ section {
       & > img {
         width: 250px;
       }
+
+      button {
+        border: none;
+        width: fit-content;
+        border-radius: 100px;
+        background: transparent;
+
+        &:focus {
+          outline: none;
+        }
+      }
     }
   }
 }
