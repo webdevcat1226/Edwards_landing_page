@@ -23,14 +23,14 @@ export class DoctorAsSectionComponent implements OnInit {
 
   // play normal sound
   normalSoundPlay() {
-    this.aspatientSound.pause();
     this.aspatientSound.currentTime = 0;
+    this.aspatientSound.pause();
     this.normalSound.play();
   }
 
   aspatientSoundPlay() {
-    this.normalSound.pause();
     this.normalSound.currentTime = 0;
+    this.normalSound.pause();
     this.aspatientSound.play();
   }
 
